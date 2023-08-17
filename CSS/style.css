@@ -1,0 +1,306 @@
+body
+{
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "result"
+    "board";
+  grid-template-rows: 170px 50px 670px;
+
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/background_main.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.menu
+{
+  grid-area: menu;
+
+  display: grid;
+  grid-template-areas:
+    "button1 history button2";
+  grid-template-columns: 100px auto 100px;
+
+  margin-left: 500px;
+  margin-right: 505px;
+  margin-top: 10px;
+
+  user-select: none;
+  font-size: 24px;
+}
+
+.new_game
+{
+  grid-area: button1;
+
+  margin-top: 25px;
+
+  height: 100px;
+
+  border-radius: 30px;
+  border-width: 2px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9);
+
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(70, 30, 20, 1);
+
+  background-color: rgba(255, 190, 130, 0.7);
+}
+
+.history
+{
+  grid-area: history;
+
+  width: 640px;
+  height: 150px;
+  padding: 10px;
+
+  margin-left: 5px;
+
+  border-radius: 30px;
+  border-width: 2px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9);
+
+  background-color: rgba(255, 190, 130, 0.7);
+}
+
+.records
+{
+  grid-area: button2;
+
+  margin-top: 25px;
+
+  height: 100px;
+
+  border-radius: 30px;
+  border-width: 2px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9);
+
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(70, 30, 20, 1);
+
+  background-color: rgba(255, 190, 130, 0.7);
+}
+
+.result
+{
+  grid-area: result;
+
+  display: none;
+
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-top: 5px;
+  margin-left: 730px;
+  width: 380px;
+  height: 40px;
+
+  user-select: none;
+  font-size: 24px;
+
+  border-radius: 30px;
+  border-width: 2px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9);
+
+  background-color: rgba(255, 190, 130, 0.7);
+}
+
+.board
+{
+  grid-area: board;
+
+  display: grid;
+  grid-template-areas:
+  "1r 2r 3r 4r 5r 6r 7r 8r";
+
+  margin-top: 10px;
+  margin-left: 600px;
+  width: 640px;
+  height: 640px;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.square
+{
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.black
+{
+  background-color: rgba(90, 45, 22, 0.7);
+}
+
+.white
+{
+  background-color: rgba(255, 175, 100, 0.7);
+}
+
+.empty
+{
+  background-image: none;
+}
+
+.possible
+{
+  border-style: solid;
+  border-color: rgba(240, 220, 160, 1);
+  border-top-width: 2.5px;
+  border-bottom-width: 2.5px;
+  border-left-width: 2.5px;
+  border-right-width: 2.5px;
+  background-position: -2.5px -2.5px;
+}
+
+.selected
+{
+  border-style: solid;
+  border-color: rgba(70, 30, 7, 1);
+  border-width: 2.5px;
+  background-position: -2.5px -2.5px;
+}
+
+.choice
+{
+  background-color: rgba(255, 222, 188, 0.7);
+}
+
+.stop
+{
+  border-top-width: 1.25px;
+  background-position: -2.5px -1.25px;
+}
+
+.sleft
+{
+  border-left-width: 1.25px;
+  background-position: -1.25px -2.5px;
+}
+
+.sright
+{
+  border-right-width: 1.25px;
+}
+
+.sbottom
+{
+  border-bottom-width: 1.25px;
+}
+
+.pawn.blackF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/bP.png');
+}
+
+.pawn.whiteF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/wP.png');
+}
+
+.knight.blackF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/bN.png');
+}
+
+.knight.whiteF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/wN.png');
+}
+
+.bishop.blackF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/bB.png');
+}
+
+.bishop.whiteF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/wB.png');
+}
+
+.rook.blackF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/bR.png');
+}
+
+.rook.whiteF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/wR.png');
+}
+
+.queen.blackF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/bQ.png');
+}
+
+.queen.whiteF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/wQ.png');
+}
+
+.king.blackF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/bK.png');
+}
+
+.king.whiteF
+{
+  background-image: url('C:/Users/DJ_RTYTb/OneDrive/Рабочий стол/ДГТУ/Веб/Big2/SOURCE/wK.png');
+}
+
+#1r
+{
+  grid-area: "1r";
+}
+
+#2r
+{
+  grid-area: "2r";
+}
+
+#3r
+{
+  grid-area: "3r";
+}
+
+#4r
+{
+  grid-area: "4r";
+}
+
+#5r
+{
+  grid-area: "5r";
+}
+
+#6r
+{
+  grid-area: "6r";
+}
+
+#7r
+{
+  grid-area: "7r";
+}
+
+#8r
+{
+  grid-area: "8r";
+}
